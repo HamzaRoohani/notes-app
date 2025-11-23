@@ -1,0 +1,23 @@
+:root{
+  --bg:#f6f8fa;
+  --card:#ffffff;
+  --accent:#1f6feb;
+  --danger:#e55353;
+}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;background:var(--bg);color:#0b1220}
+.app-container{max-width:900px;margin:32px auto;padding:16px}
+h1{margin:0 0 16px}
+.note-form{display:flex;flex-direction:column;gap:8px;background:var(--card);padding:12px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.note-form input,.note-form textarea{padding:8px;border:1px solid #ddd;border-radius:6px}
+.note-form textarea{min-height:80px}
+.form-actions{display:flex;gap:8px}
+.form-actions button{padding:8px 12px;border-radius:6px;border:0;background:var(--accent);color:white;cursor:pointer}
+.form-actions .btn-cancel{background:#999}
+.notes{margin-top:16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.note-item{background:var(--card);padding:12px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.note-top{display:flex;justify-content:space-between;align-items:center}
+.note-item .actions button{margin-left:8px;padding:6px 8px;border-radius:6px;border:0;cursor:pointer}
+.note-item .actions .danger{background:var(--danger);color:white}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,0.4);display:flex;align-items:center;justify-content:center}
+.modal-content{background:var(--card);padding:16px;border-radius:8px;min-width:320px}
+.meta{color:#666;margin-top:8px;display:block}
